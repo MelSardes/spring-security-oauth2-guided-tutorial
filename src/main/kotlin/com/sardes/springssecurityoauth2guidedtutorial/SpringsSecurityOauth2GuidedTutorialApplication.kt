@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletResponse
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.PropertySource
 import org.springframework.http.HttpStatus
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.invoke
@@ -25,6 +26,7 @@ import org.springframework.web.filter.OncePerRequestFilter
 
 @SpringBootApplication
 @RestController
+@PropertySource("file:secrets.properties")
 class SpringsSecurityOauth2GuidedTutorialApplication {
     /**
      * Handles requests to the "/user" endpoint.
