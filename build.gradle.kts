@@ -28,8 +28,10 @@ dependencies {
     implementation("org.webjars:bootstrap:5.0.0-beta1")
     implementation("org.webjars:webjars-locator-core")
     implementation("org.webjars:js-cookie:2.2.1")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+    testImplementation("io.projectreactor:reactor-test")
     "developmentOnly"("org.springframework.boot:spring-boot-devtools")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
